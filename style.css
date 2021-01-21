@@ -1,0 +1,133 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #abb2b9;
+}
+  
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+.page {
+    display: flex;
+    flex-direction: column;
+    width:75vw;
+    margin:5vw auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color:  #e6b0aa;
+}
+
+.TITRE {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3cm;
+    width: 100%;
+    font-size: 3rem;
+    text-shadow: 9px 13px 0px rgba(216, 122, 221, 0.93);
+}
+
+#score {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: dashed underline overline white;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+
+.container {
+    background-color:  #ecf0f1
+    ;
+    display: flex;
+}
+
+
+.N0, .N1, .N2, .N3, .N4 {
+    width: 100%;
+    display: flex;
+}
+
+.n0, .n1, .n2, .n3, .n4 {
+    height: 6.5cm;
+    width: 20%;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    display: block;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background: radial-gradient(circle at 100px 100px,  #d1f2eb,#616a6b);
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Question0, #Question1, #Question2, #Question3, #Question4 {
+    height: 5cm;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 3cm;
+    line-height: 1.3rem;
+}
+
+h3 {
+    font-size: medium;
+    color:  #2e4053;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label span {
+    background-color: blue;
+}
+
+
+button {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50px;
+    border-bottom: 5px solid steelblue;
+    background: linear-gradient(#fae5d3, #f8c471);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+      
+#result0 >p, #result1 > p, #result2 > p, #result3 > p, #result4 > p {
+    border: 3px #82e0aa  inset;
+    border-radius: 20px / 10px;
+    box-shadow: 4px 4px 4px  #82e0aa; 
+}
+
+.vrai0c, .vrai1a, .vrai2a, .vrai3c, .vrai4b {
+    color: green !important;
+}
+
+.faux0b, .faux0c, .faux1b, .faux1c, .faux2b, .faux2c, .faux3a, .faux3b, .faux3d, .faux4a, .faux4c {
+    color: red;
+}
